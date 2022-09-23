@@ -8,6 +8,7 @@
     list-style-type: none;
     font-family: Montserrat;
     letter-spacing: .1rem;
+    transition: ease .3s;
 }
 
 *::selection {
@@ -81,9 +82,8 @@ header .container {
     padding: 0;
 }
 
-header ion-icon {
-    font-size: 4rem;
-    color: var(--clr3);
+header .logo {
+    width: 4rem;
 }
 
 header nav {
@@ -287,4 +287,126 @@ header nav a:hover {
     top: -2.5rem;
 }
 
-/* skills section ends */
+/* skills section ends 
+
+/* services section starts */
+#services {
+    background-color: var(--clr2);
+    color: var(--clr4);
+}
+
+#services .heading {
+    margin-bottom: 3rem;
+}
+
+#services .service-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#services .service {
+    width: 18rem;
+    background-color: var(--clr4);
+    color: var(--clr2);
+    border-radius: .5rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#services .service:hover {
+    background-color: var(--clr3);
+    color: var(--clr4);
+    transform: scale(1.05);
+}
+
+#services .service ion-icon {
+    font-size: 3rem;
+}
+
+#services .service-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* services section ends */
+
+/* portfolio section starts */
+#portfolio {
+    background-color: var(--clr4);
+    color: var(--clr2);
+}
+
+#portfolio .heading {
+    margin-bottom: 3rem;
+}
+
+#portfolio nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#portfolio nav a {
+    color: var(--clr2);
+    font-size: 1.2rem;
+}
+
+#portfolio nav a:hover {
+    color: var(--clr3);
+}
+
+#portfolio .project-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+#portfolio .col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 50rem;
+}
+
+#portfolio .row {
+    display: flex;
+    gap: 1rem;
+}
+
+#portfolio .column1 .f1 {
+    flex: 1;
+    /* width: 100%;
+    max-width: 30rem;
+    height: 20rem; */
+}
+
+#portfolio .column1 .f2 {
+    flex: 2;
+}
+
+#portfoli .column2 .row {
+    flex: 1;
+}
+
+#portfolio .project {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* portfolio section ends */
