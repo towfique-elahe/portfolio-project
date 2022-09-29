@@ -8,16 +8,17 @@
     <title>Portfolio Project</title>
     <link rel="shortcut icon" href="./media/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 
-<body>
+<body onclick="hideMenu()">
     <header>
         <div class="container">
             <a href="#">
                 <img class="logo" src="./media/logo.svg" alt="">
             </a>
 
-            <nav>
+            <nav class="nav">
                 <a href="#hero">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Service</a>
@@ -25,6 +26,23 @@
                 <a href="#resume">Resume</a>
                 <a href="#blog">Blog</a>
                 <a href="#contact">Contact</a>
+            </nav>
+
+            <nav class="mobile-nav none">
+                <button class="menu-button" onclick="dropDown()">
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+                <div class="menu-content none" id="menuContent">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -361,7 +379,7 @@
         <div class="container">
             <h3 class="heading">Blog Post</h3>
             <div class="blog-container">
-                <div class="col1 blog">
+                <div class="blog">
                     <img src="./media/p7.png" alt="">
                     <div class="info">
                         <h4 class="blog-title">Design is not just what it looks like</h4>
@@ -386,56 +404,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="col2">
-                    <div class="row blog">
-                        <img src="./media/p6.png" alt="">
-                        <div class="info">
-                            <h4 class="blog-title">Design is not just what it looks like</h4>
-                            <p class="blog-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-                                consequuntur aperiam obcaecati ullam magni. Placeat sit doloremque amet eveniet magni?
-                            </p>
-                            <div class="bottom">
-                                <a href="#">READ MORE</a>
-                                <div class="social">
-                                    <a href="#">
-                                        <ion-icon name="logo-facebook"></ion-icon>
-                                    </a>
-                                    <a href="#">
-                                        <ion-icon name="logo-twitter"></ion-icon>
-                                    </a>
-                                    <a href="#">
-                                        <ion-icon name="logo-pinterest"></ion-icon>
-                                    </a>
-                                    <a href="#">
-                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                    </a>
-                                </div>
+                <div class="blog">
+                    <img src="./media/p4.png" alt="">
+                    <div class="info">
+                        <h4 class="blog-title">Design is not just what it looks like</h4>
+                        <p class="blog-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                            consequuntur aperiam obcaecati ullam magni. Placeat sit doloremque amet eveniet magni?
+                        </p>
+                        <div class="bottom">
+                            <a href="#">READ MORE</a>
+                            <div class="social">
+                                <a href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a href="#">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                                <a href="#">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                                <a href="#">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="row blog">
-                        <img src="./media/p1.png" alt="">
-                        <div class="info">
-                            <h4 class="blog-title">Design is not just what it looks like</h4>
-                            <p class="blog-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-                                consequuntur aperiam obcaecati ullam magni. Placeat sit doloremque amet eveniet magni?
-                            </p>
-                            <div class="bottom">
-                                <a href="#">READ MORE</a>
-                                <div class="social">
-                                    <a href="#">
-                                        <ion-icon name="logo-facebook"></ion-icon>
-                                    </a>
-                                    <a href="#">
-                                        <ion-icon name="logo-twitter"></ion-icon>
-                                    </a>
-                                    <a href="#">
-                                        <ion-icon name="logo-pinterest"></ion-icon>
-                                    </a>
-                                    <a href="#">
-                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                    </a>
-                                </div>
+                </div>
+                <div class="blog">
+                    <img src="./media/p1.png" alt="">
+                    <div class="info">
+                        <h4 class="blog-title">Design is not just what it looks like</h4>
+                        <p class="blog-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                            consequuntur aperiam obcaecati ullam magni. Placeat sit doloremque amet eveniet magni?
+                        </p>
+                        <div class="bottom">
+                            <a href="#">READ MORE</a>
+                            <div class="social">
+                                <a href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a href="#">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                                <a href="#">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                                <a href="#">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -29,6 +29,18 @@ html {
     font-size: 14px;
 }
 
+@media only screen and (max-width: 810px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    html {
+        font-size: 10px;
+    }
+}
+
 a {
     display: inline-block;
 }
@@ -38,6 +50,7 @@ a {
     max-width: 1080px;
     margin: 0 auto;
     padding: 10rem 0;
+    overflow: hidden;
 }
 
 .heading {
@@ -72,10 +85,14 @@ a {
     color: var(--clr4);
 }
 
+.none {
+    display: none;
+}
+
 header {
     width: 100%;
     background-color: var(--clr4);
-    padding: 1rem 0;
+    padding: .5rem 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -88,28 +105,87 @@ header .container {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    overflow: inherit;
 }
 
 header .logo {
     width: 4rem;
 }
 
-header nav {
+header .nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header nav a {
-    font-size: 1.2rem;
+header .nav a {
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--clr2);
     padding: .5rem 1rem;
     border-radius: .3rem;
 }
 
-header nav a:hover {
+header .nav a:hover {
     color: var(--clr4);
     background-color: var(--clr3);
+}
+
+/* mobile nav */
+header .mobile-nav {
+    position: relative;
+}
+
+header .mobile-nav .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr2);
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: .3rem;
+}
+
+header .mobile-nav .menu-content {
+    position: absolute;
+    top: 145%;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--clr2);
+    border-radius: .4rem;
+    overflow: hidden;
+}
+
+header .mobile-nav .menu-content ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header .mobile-nav .menu-content a {
+    font-size: 1.2rem;
+    display: block;
+    color: var(--clr4);
+    padding: 1rem 2rem;
+}
+
+header .mobile-nav .menu-content a:hover,
+header .mobile-nav .menu-content a:active {
+    background-color: var(--clr3);
+}
+
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 645px) {
+    header .nav {
+        display: none;
+    }
+
+    header .mobile-nav {
+        display: inline-block;
+    }
 }
 
 /* hero section starts */
@@ -688,22 +764,6 @@ header nav a:hover {
     gap: 1rem;
 }
 
-#blog .col1 {
-    width: 100%;
-    max-width: 25rem;
-    height: fit-content;
-}
-
-#blog .col2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#blog .row {
-    display: flex;
-}
-
 #blog .blog {
     overflow: hidden;
     background-color: var(--clr2);
@@ -925,9 +985,9 @@ footer .copyright a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
-    padding: .5rem;
-    border-radius: .2rem;
+    font-size: 2rem;
+    padding: .2rem;
+    border-radius: .5rem;
     bottom: 2rem;
     right: 2rem;
 }
