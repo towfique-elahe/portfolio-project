@@ -1,0 +1,256 @@
+@media only screen and (max-width: 645px) {
+
+    /* header */
+    header .nav {
+        display: none;
+    }
+
+    header .mobile-nav {
+        display: inline-block;
+    }
+
+    /* hero section */
+    #hero .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    #hero .left {
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero .txt-container {
+        height: 4rem;
+    }
+
+    #hero .title span {
+
+        display: flex;
+        justify-content: center;
+        left: 0;
+        top: -100%;
+    }
+
+    @keyframes txt1 {
+        0% {
+            top: 0;
+        }
+
+        12.5% {
+            top: 0;
+        }
+
+        25% {
+            top: -150%;
+        }
+
+        37.5% {
+            top: -150%;
+        }
+
+        50% {
+            top: -150%;
+        }
+
+        62.5% {
+            top: -150%;
+        }
+
+        75% {
+            top: -150%;
+        }
+
+        87.5% {
+            top: -150%;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    @keyframes txt2 {
+        0% {
+            top: -150%;
+        }
+
+        12.5% {
+            top: -150%;
+        }
+
+        25% {
+            top: 0;
+        }
+
+        37.5% {
+            top: 0;
+        }
+
+        50% {
+            top: -150%;
+        }
+
+        62.5% {
+            top: -150%;
+        }
+
+        75% {
+            top: -150%;
+        }
+
+        87.5% {
+            top: -150%;
+        }
+
+        100% {
+            top: -150%;
+        }
+    }
+
+    @keyframes txt3 {
+        0% {
+            top: -150%;
+        }
+
+        12.5% {
+            top: -150%;
+        }
+
+        25% {
+            top: -150%;
+        }
+
+        37.5% {
+            top: -150%;
+        }
+
+        50% {
+            top: 0;
+        }
+
+        62.5% {
+            top: 0;
+        }
+
+        75% {
+            top: -150%;
+        }
+
+        87.5% {
+            top: -150%;
+        }
+
+        100% {
+            top: -150%;
+        }
+    }
+
+    @keyframes txt4 {
+        0% {
+            top: -150%;
+        }
+
+        12.5% {
+            top: -150%;
+        }
+
+        25% {
+            top: -150%;
+        }
+
+        37.5% {
+            top: -150%;
+        }
+
+        50% {
+            top: -150%;
+        }
+
+        62.5% {
+            top: -150%;
+        }
+
+        75% {
+            top: 0;
+        }
+
+        87.5% {
+            top: 0;
+        }
+
+        100% {
+            top: -150%;
+        }
+    }
+
+    #hero .right img {
+        max-width: 25rem;
+    }
+
+    /* skills section */
+    #skills .skill {
+        max-width: 40rem;
+    }
+
+    /* potfolio section */
+    #portfolio .p1 {
+        grid-area: 1 / 1;
+    }
+
+    #portfolio .p2 {
+        grid-area: 2 / 1 / span 3;
+    }
+
+    #portfolio .p3 {
+        grid-area: 5 / 1;
+    }
+
+    #portfolio .p4 {
+        grid-area: 1 / 2;
+    }
+
+    #portfolio .p5 {
+        grid-area: 2 / 2 / span 3;
+    }
+
+    #portfolio .p6 {
+        grid-area: 5 / 2;
+    }
+
+    #portfolio .p7 {
+        grid-area: 6 / 1 / span 7 / span 2;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    #about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .left img {
+        max-width: 25rem;
+    }
+
+    #about .right .heading {
+        text-align: center;
+    }
+
+    #about .right .buttons {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    #skills .skill {
+        max-width: 23rem;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    #services .service {
+        max-width: inherit;
+    }
+}
