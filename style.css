@@ -81,7 +81,9 @@ a {
     font-weight: 600;
 }
 
-.button:hover {
+.button:hover,
+.button:active,
+.button:focus {
     background-color: var(--clr3);
     color: var(--clr4);
 }
@@ -479,7 +481,9 @@ header .mobile-nav .menu-content a:active {
     color: var(--clr4);
 }
 
-#about .cv:hover {
+#about .cv:hover,
+#about .cv:active,
+#about .cv:focus {
     background-color: var(--clr4);
     color: var(--clr2);
 }
@@ -591,7 +595,9 @@ header .mobile-nav .menu-content a:active {
     gap: 1rem;
 }
 
-#services .service:hover {
+#services .service:hover,
+#services .service:active,
+#services .service:focus {
     background-color: var(--clr3);
     color: var(--clr4);
     transform: scale(1.05);
@@ -632,7 +638,9 @@ header .mobile-nav .menu-content a:active {
     font-size: 1.2rem;
 }
 
-#portfolio nav a:hover {
+#portfolio nav a:hover,
+#portfolio nav a:active,
+#portfolio nav a:focus {
     color: var(--clr3);
 }
 
@@ -701,11 +709,15 @@ header .mobile-nav .menu-content a:active {
     padding-top: 10rem;
 }
 
-#portfolio .project:hover {
+#portfolio .project:hover,
+#portfolio .project:active,
+#portfolio .project:focus {
     box-shadow: #252a342e 0 0 1rem .1rem;
 }
 
-#portfolio .project:hover .hidden {
+#portfolio .project:hover .hidden,
+#portfolio .project:active .hidden,
+#portfolio .project:focus .hidden {
     opacity: 1;
     padding-top: 0;
 }
@@ -788,7 +800,9 @@ header .mobile-nav .menu-content a:active {
     opacity: .5;
 }
 
-#resume .card:hover {
+#resume .card:hover,
+#resume .card:active,
+#resume .card:focus {
     transform: scale(1.02);
 }
 

@@ -191,7 +191,7 @@
 
     /* skills section */
     #skills .skill {
-        max-width: 40rem;
+        max-width: none !important;
     }
 
     /* potfolio section */
@@ -228,6 +228,7 @@
     #about .container {
         flex-direction: column;
         text-align: center;
+        gap: 2rem;
     }
 
     #about .left img {
