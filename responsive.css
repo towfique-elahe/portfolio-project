@@ -255,3 +255,34 @@
         max-width: inherit;
     }
 }
+
+@media only screen and (max-width: 1104px) {
+    #resume .sub-heading {
+        margin-top: 2rem;
+    }
+
+    #resume .card {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #blog .blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #blog .blog {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #blog .blog {
+        flex-direction: column;
+    }
+
+    #blog .blog img {
+        width: 100%;
+    }
+}
