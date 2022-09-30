@@ -27,7 +27,7 @@
 
 html {
     font-size: 14px;
-    background-color: var(--clr4);
+    /* background-color: var(--clr4); */
 }
 
 @media only screen and (max-width: 810px) {
@@ -151,7 +151,7 @@ header .mobile-nav .menu-button {
 header .mobile-nav .menu-content {
     width: 15rem;
     position: absolute;
-    top: 145%;
+    top: 160%;
     right: 0;
     z-index: 1000;
     background-color: var(--clr2);
@@ -200,6 +200,7 @@ header .mobile-nav .menu-content a:active {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20rem;
 }
 
 #hero .left {
@@ -252,7 +253,7 @@ header .mobile-nav .menu-content a:active {
 
 #hero .social a {
     color: var(--clr2);
-    font-size: 2.2rem;
+    font-size: 3rem;
 }
 
 #hero .social a:hover,
@@ -1349,7 +1350,7 @@ footer .copyright a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 3rem;
     padding: .2rem;
     border-radius: .5rem;
     bottom: 2rem;
