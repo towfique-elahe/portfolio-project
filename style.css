@@ -27,6 +27,7 @@
 
 html {
     font-size: 14px;
+    background-color: var(--clr4);
 }
 
 @media only screen and (max-width: 810px) {
@@ -46,7 +47,7 @@ a {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 1080px;
     margin: 0 auto;
     padding: 10rem 0;
@@ -92,7 +93,7 @@ a {
 header {
     width: 100%;
     background-color: var(--clr4);
-    padding: .5rem 0;
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -148,6 +149,7 @@ header .mobile-nav .menu-button {
 }
 
 header .mobile-nav .menu-content {
+    width: 15rem;
     position: absolute;
     top: 145%;
     right: 0;
@@ -159,10 +161,10 @@ header .mobile-nav .menu-content {
 }
 
 header .mobile-nav .menu-content a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: block;
     color: var(--clr4);
-    padding: 1rem 2rem;
+    padding: 1.5rem 2.5rem;
 }
 
 header .mobile-nav .menu-content a:hover,
