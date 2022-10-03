@@ -26,11 +26,10 @@
     }
 
     #hero .title span {
-
         display: flex;
         justify-content: center;
         left: 0;
-        top: -100%;
+        top: -150%;
     }
 
     @keyframes txt1 {
@@ -222,6 +221,24 @@
     #portfolio .p7 {
         grid-area: 6 / 1 / span 7 / span 2;
     }
+
+    /* contact section */
+    #contact form {
+        justify-content: center;
+    }
+
+    #contact form .row {
+        flex-direction: column;
+    }
+
+    #contact form .col1 {
+        max-width: none;
+    }
+
+    #contact form button {
+        align-self: center;
+    }
+
 }
 
 @media only screen and (max-width: 757px) {
