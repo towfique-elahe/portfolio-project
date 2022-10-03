@@ -1209,6 +1209,10 @@ footer .copyright a {
     color: var(--light);
 }
 
+.modeToggle #moon {
+    color: var(--dark);
+}
+
 .iconLight {
     color: var(--light) !important;
 }
