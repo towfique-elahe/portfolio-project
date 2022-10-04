@@ -6,6 +6,8 @@
             "Message: ".$_POST["message"],
             "Name: ".$_POST["name"]."|| Budget: ".$_POST["budget"]."|| Email: ".$_POST["email"],
         );
-        header('Location: ./index.html#contact');
+        
     }
+
+    header('Location: ./index.html#contact');
 ?>
