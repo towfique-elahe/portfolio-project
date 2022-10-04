@@ -17,7 +17,7 @@ window.onclick = function (event) {
 }
 // dropdown button ends
 
-// dark light toggle
+// dark light toggle starts
 function darkToggle() {
     // sections
     const mode = document.getElementsByClassName("dark");
@@ -25,7 +25,17 @@ function darkToggle() {
         mode[i].classList.toggle("light");
     }
     // toggle
-    document.getElementById("active").classList.toggle("activeMove");
     document.getElementById("sun").classList.toggle("iconDark");
     document.getElementById("moon").classList.toggle("iconLight");
 }
+// dark light toggle ends
+
+// slidup animation strats
+window.onscroll = function () { srollUP() };
+
+function srollUP() {
+    if (document.documentElement.scrollTop > 350) {
+        document.getElementById("scroll").className = "slideUp";
+    }
+}
+// slidup animation ends

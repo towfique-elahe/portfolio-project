@@ -751,7 +751,7 @@ header .mobile-nav .menu-content a:active {
     color: var(--light);
     padding: 2rem;
     border-radius: .5rem;
-    border-bottom: solid .2rem var(--primary);
+    border-bottom: solid .2rem var(--light);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -778,6 +778,7 @@ header .mobile-nav .menu-content a:active {
 #resume .card:active,
 #resume .card:focus {
     transform: scale(1.02);
+    border-color: var(--primary);
 }
 
 #resume .card:hover .tag {
@@ -812,6 +813,10 @@ header .mobile-nav .menu-content a:active {
     flex-direction: column;
     gap: 1rem;
     position: relative;
+}
+
+#testimonials .testimonial:hover img {
+    transform: scale(1.1);
 }
 
 #testimonials .testimonial .name {
@@ -1043,7 +1048,8 @@ header .mobile-nav .menu-content a:active {
     font-size: 3rem;
 }
 
-#contact .info a {
+#contact .info a,
+#contact .info p {
     color: var(--light);
     font-size: 1.2rem;
     font-weight: 500;
@@ -1163,10 +1169,30 @@ footer .copyright a {
     right: 2rem;
 }
 
-.back-to-top:hover,
-.back-to-top:active,
-.back-to-top:focus {
+.back-to-top:hover {
     color: var(--primary);
+}
+
+/* slide up animation */
+#scroll {
+    visibility: hidden;
+}
+
+.slideUp {
+    animation: slideUp 1s;
+    visibility: visible !important;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 /* dark and light mode toggle */
@@ -1180,6 +1206,7 @@ footer .copyright a {
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: var(--gray);
 }
 
 .modeToggle .switch {
@@ -1187,38 +1214,24 @@ footer .copyright a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     position: relative;
 }
 
-.modeToggle .switch .active {
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--dark);
-    border-radius: 50%;
-    bottom: 2.7rem;
-    z-index: -1;
-}
-
-.activeMove {
-    top: 2.7rem;
-}
-
 .modeToggle #sun {
-    color: var(--light);
-}
-
-.modeToggle #moon {
     color: var(--dark);
 }
 
+.modeToggle #moon {
+    color: var(--light);
+}
+
 .iconLight {
-    color: var(--light) !important;
+    color: var(--dark) !important;
 }
 
 .iconDark {
-    color: var(--dark) !important;
+    color: var(--light) !important;
 }
 
 .dark {
